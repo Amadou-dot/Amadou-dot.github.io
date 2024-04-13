@@ -1,2 +1,205 @@
-Hello World
-Portfolio Site
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amadou's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__container">
+          <a href="#home" id="navbar__logo">Amadou</a>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="#home" class="navbar__links" id="home">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#about" class="navbar__links" id="about">About me</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#services" class="navbar__links" id="skills">Skills</a>
+            </li>
+            <li class="navbar__btn">
+              <a href="#sign-up" class="button" id="experience">Experience</a>
+            </li>
+            <li class="navbar__btn">
+              <a href="#sign-up" class="button" id="contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main__content">
+      <section class="banner card--large">
+        <div class="profile__container">
+          <img class="image" src="./resources/images/profile.jpg" alt="" />
+        </div>
+        <div class="banner__container">
+          <h1 class="banner__header">Amadou Seck - Front-End developer</h1>
+          <p class="banner__text">
+            Hello! I'm Amadou, a passionate front-end web developer with a love
+            for clean, elegant, and user-friendly designs. I am well versed in
+            HTML, CSS, JavaScript, and React. I am also familiar Node.js and
+            eager to learn new technologies to improve my skills. Currently, I
+            am pursuing a degree in Computer Science at
+            <a href="https://www.msudenver.edu/" target="_blank">MSU denver</a>.
+          </p>
+          <p><a style="color: var(--Primary);" href="https://1drv.ms/w/s!AmrJOWP9JgCwhZV6lDejr6FUTdcggw?e=4FY47Q" target="_blank">Resume/CV</a></p>
+        </div>
+      </section>
+
+      <section class="about-me">
+        <article class="about-me__section">
+          <h2 class="about-me__header what-i-do">What I do</h2>
+          <p class="about-me__text">
+            As a front-end developer, I specialize in turning design mockups
+            into fully functional, responsive websites. My toolbox includes
+            HTML, CSS, JavaScript, and various front-end libraries and
+            frameworks. I'm obsessed with pixel-perfect layouts and optimizing
+            performance for seamless user experiences.
+          </p>
+        </article>
+
+        <article class="about-me__section my-approach">
+          <h2 class="about-me__header">My approach</h2>
+          <p class="about-me__text">
+            I believe that the best websites are built with a user-first
+            approach. I strive to create websites that are intuitive,
+            accessible, and visually appealing. I am constantly learning and
+            improving my skills to stay up-to-date with the latest web
+            technologies and trends.
+          </p>
+        </article>
+
+        <article class="about-me__section tool-set">
+          <h2 class="about-me__header">Tool set</h2>
+          <ul class="toolset-list">
+            <div class="part-1">
+              <li class="icon">
+                <img
+                  class="icon__img"
+                  src="./resources/Icons/html.png"
+                  alt="HTML icon" />
+                HTML
+              </li>
+              <li class="icon">
+                <img
+                  class="icon__img"
+                  src="./resources/Icons/css-3.png"
+                  alt="CSS icon" /><span>CSS</span>
+              </li>
+              <li class="icon">
+                <img
+                  class="icon__img"
+                  src="./resources/Icons/js.png"
+                  alt="JavaScript icon" />JavaScript
+              </li>
+              <li class="icon">
+                <img
+                  class="icon__img"
+                  src="./resources/Icons/atom.png"
+                  alt="React icon" />React
+              </li>
+              <li class="icon">
+                <img
+                  class="icon__img"
+                  src="./resources/Icons/node-js.png"
+                  alt="Node.js icon" />Node.js
+              </li>
+              <li class="icon">
+                <img
+                  class="icon__img"
+                  src="./resources/Icons/social.png"
+                  alt="Git icon" />Git
+              </li>
+            </div>
+            <div class="part-2">
+              <li class="icon">
+                <img
+                  class="icon__img"
+                  src="./resources/Icons/figma.png"
+                  alt="Figma icon" />Figma
+              </li>
+              <li class="icon">
+                <img
+                  class="icon__img"
+                  src="./resources/Icons/vscode.png"
+                  alt="VS Code icon" />VS Code
+              </li>
+              <li class="icon">
+                <img
+                  class="icon__img"
+                  src="./resources/Icons/bootstrap.png"
+                  alt="Bootstrap icon" />Bootstrap
+              </li>
+              <li class="icon">
+                <img
+                  class="icon__img"
+                  src="./resources/Icons/sass.png"
+                  alt="Sass icon" />Sass
+              </li>
+              <li class="icon">💅 Styled Components</li>
+              <li class="icon">
+                <img
+                  class="icon__img"
+                  src="./resources/Icons/responsive.png"
+                  alt="Responsive Design icon" />Responsive Design
+              </li>
+            </div>
+          </ul>
+        </article>
+
+        <article class="about-me__section projects">
+          <h2 class="about-me__header">Projects</h2>
+          <div class="project__items">
+            <div class="project-item project--1">
+              <h2>Omnifood</h2>
+              <div class="showcase">
+                <button class="live"><a href="https://omnifood-amadou.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a></button>
+                <button class="source_code"><a href="https://github.com/Amadou-dot/Omnifood/tree/main" target="_blank" rel="noopener noreferrer">Code</a></button>
+              </div>
+            </div>
+            <div class="project-item project--2">
+              <h2>Mapty</h2>
+              <div class="showcase">
+                <button class="live"><a href="https://mapty-amadou.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a></button>
+                <button class="source_code"><a href="https://github.com/Amadou-dot/mapty/tree/main" target="_blank" rel="noopener noreferrer">Code</a></button>
+              </div>
+            </div>
+            <div class="project-item project--3">
+              <h2>Forkify</h2>
+              <div class="showcase">
+                <button class="live"><a href="https://forkify-amadou.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a></button>
+                <button class="source_code"><a href="https://github.com/Amadou-dot/forkify/tree/main" target="_blank" rel="noopener noreferrer">Code</a></button>
+              </div>
+            </div>
+            <div class="project-item project--4">
+              <h2>Manage</h2>
+              <div class="showcase">
+                <button class="live"><a href="https://manage-amadou.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a></button>
+                <button class="source_code"><a href="https://github.com/Amadou-dot/Manage-Landing-Page/tree/main" target="_blank" rel="noopener noreferrer">Code</a></button>
+              </div>
+            </div>
+          </div>
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <!-- footer content -->
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

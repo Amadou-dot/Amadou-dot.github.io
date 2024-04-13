@@ -1,0 +1,185 @@
+.navbar__container,
+li > a {
+  display: flex;
+  flex-direction: row;
+  color: var(--Primary);
+  font-size: 2.6rem;
+  justify-content: space-around;
+  padding: 1.6rem;
+}
+
+/** reusable */
+
+.card--large {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--SysGray);
+  height: 50rem;
+  width: 80%;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+}
+.card--medium {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--SysGray);
+  height: 30rem;
+  width: 70%;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+}
+.image {
+  border-radius: 10px;
+  width: fit-content;
+  height: 90%;
+  object-fit: contain;
+}
+
+/** end of reusable */
+
+.main__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Profile picture */
+.profile__container {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 100%;
+  margin-right: 5rem;
+}
+
+/** Introduction */
+.banner__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+}
+.banner__header {
+  margin-bottom: 5rem;
+}
+
+/***About me */
+.about-me {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr;
+  width: 80%;
+  height: 80rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-me__section {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+}
+.about-me__header {
+  color: var(--Primary);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.tool-set {
+  height: 100%;
+  align-items: center;
+}
+.toolset-list {
+  display: flex;
+  justify-content: end;
+  font-size: 2rem;
+  line-height: 2;
+  width: 90%;
+}
+
+.icon {
+  display: flex;
+  width: 30rem;
+  height: 3rem;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.icon__img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+}
+
+/** Projects */
+.project__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  width: 90%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.project-item {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+}
+.project--1,
+.project--2,
+.project--3,
+.project--4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.project--1::before,
+.project--2::before,
+.project--3::before,
+.project--4::before {
+  content: '';
+  background: url('./resources/images/omnifood.png');
+  background-size: cover;
+  opacity: 0.5; /* Adjust this to change the opacity */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+.project--2::before {
+  background-image: url('./resources/images/mapty.png');
+  background-size: cover;
+}
+.project--3::before {
+  background-image: url('./resources/images/forkify.png');
+  background-size: cover;
+}
+.project--4::before {
+  background-image: url('./resources/images/landing.png');
+  background-size: cover;
+}
+
+.showcase {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+}
